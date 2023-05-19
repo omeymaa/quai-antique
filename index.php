@@ -89,6 +89,78 @@ require('templates/header.php');
     </div>
 </section>
 
+<!-- Avis client -->
+<section class="py-5 testimonials-clean" id="reviews">
+    <div class="container">
 
+        <h2 class="mb-4">Ce qu'ils disent de nous</h2>
+
+        <div class="row text-center">
+            <div class="col-md-4 mb-5 mb-md-0">
+                <div class="p-2">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+                    tenetur.
+                </p>
+
+                <h5 class="mb-3">Maria Smantha</h5>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0">
+                <div class="p-2">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+                </p>
+                <h5 class="mb-3">Lisa Cudrow</h5>
+            </div>
+            <div class="col-md-4 mb-0">
+                <div class="p-2">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p class="px-xl-3">
+                    <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+                    dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.
+                </p>
+                <h5 class="mb-3">John Smith</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partenaires -->
+
+<section class="container py-5" id="partners">
+    <div class="row d-flex align-items-center text-center">
+        <div class="my-5 col-lg-3 col-6">
+            <img class="img-fluid w-25" src="assets/images/partners/pages-jaunes-partner.svg" alt="logo Pages jaunes">
+        </div>
+        <div class="my-5 col-lg-3 col-6 ">
+            <img class="img-fluid w-50" src="assets/images/partners/thefork-partner.svg" alt="logo The fork">
+        </div>
+        <div class="my-5 col-lg-3 col-6">
+            <img class="img-fluid w-50" src="assets/images/partners/tripadvisor-partner.svg" alt="logo Tripadvisor">
+        </div>
+        <div class="my-5 col-lg-3 col-6">
+            <img class="img-fluid w-50" src="assets/images/partners/yelp-partner.svg" alt="logo Yelp">
+        </div>
+    </div>
+</section>
 
 <?php require('templates/footer.php'); ?>
