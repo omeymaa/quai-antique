@@ -1,5 +1,6 @@
 <?php
 require('./templates/header.php');
+require('actions/connections/signupAction.php');
 ?>
 
 <section class="vh-100 bg-brown-dark">
@@ -28,25 +29,25 @@ require('./templates/header.php');
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <span class="form-label" for="form3Example1m"></span>
-                                                <input type="text" id="form3Example1m" class="form-control form-control-sm" placeholder="Prénom" name="firstname" />
+                                                <input type="text" id="form3Example1m" class="form-control form-control-sm" placeholder="Prénom" name="firstname" required />
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <span class="form-label" for="form3Example1n"></span>
-                                                <input type="text" id="form3Example1n" class="form-control form-control-sm" placeholder="Nom" name="lastname" />
+                                                <input type="text" id="form3Example1n" class="form-control form-control-sm" placeholder="Nom" name="lastname" required />
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="form-outline mb-4">
                                         <span class="form-label" for="form2Example17"></span>
-                                        <input type="email" id="form2Example17" class="form-control form-control-sm" placeholder="E-mail" name="email" />
+                                        <input type="email" id="form2Example17" class="form-control form-control-sm" placeholder="E-mail" name="email" required />
                                     </div>
 
                                     <div class="form-outline mb-4">
                                         <span class="form-label" for="form2Example27"></span>
-                                        <input type="password" id="form2Example27" class="form-control form-control-sm" placeholder="Mot de passe" name="password" />
+                                        <input type="password" id="form2Example27" class="form-control form-control-sm" placeholder="Mot de passe" name="password" required />
                                     </div>
 
                                     <div class="form-outline mb-4">
@@ -58,7 +59,7 @@ require('./templates/header.php');
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <span class="form-label" for="form3Example1m"></span>
-                                                <input type="number" id="form3Example1m" class="form-control form-control-sm" placeholder="Nombre de convives par défaut" name="guest_default" />
+                                                <input type="number" id="form3Example1m" class="form-control form-control-sm" placeholder="Nombre de convives par défaut" name="guest" />
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">

@@ -1,5 +1,6 @@
 <?php
 require('./templates/header.php');
+require('actions/connections/loginAction.php');
 ?>
 
 <section class="vh-100 bg-brown-dark">

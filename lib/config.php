@@ -9,3 +9,9 @@ $mainMenu = [
     'logout.php' => 'Deconnexion',
 
 ];
+
+try {
+    $db = new PDO('mysql:host=localhost:8889;dbname=quai_antique;charset=utf8', 'root', 'root');
+}catch(Exception $e) {
+    die('Une erreur est survenue :'. $e->getMessage());
+}
