@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 62.5%; /*1rem = 10px*/
+}
+
+body {
+    font-size: 1.1rem; /*11px*/
+    /*font-family: 'Inter', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    color: #4A2632;
+}
+
+.purple {
+    color: #4A2632;
+}
+
+.orange, .checked {
+    color: #FEB561;
+}
+
+.bg-brown-light {
+    background-color: #EADDCD;
+}
+
+.bg-brown-dark {
+    background-color: #A08986;
+}
+
+.custom-toggler .navbar-toggler {
+    border-width: 50px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(74, 38, 50, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+/* Header */
+.logo img{
+    width: 15rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #FEB561;
+}
+
+.custom-toggler {
+    border-color: #4A2632;
+}
+
+nav > ul > li > a:hover {
+    color: #824358; 
+}
+
+/* index.php */
+/* Landing page */
+.background {
+    background: url('../images/quai-antique.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.orange-button {
+    background-color: #FEB561;
+    color: #4A2632;
+    border-radius: 0px; }
+    .orange-button:hover {
+    background-color: #FEC583;
+    color: #4A2632;
+}
+
+.scroll .scroll-down {
+    text-decoration: none;
+}
+
+#reviews {
+    background-color: #EADDCD;
+}
