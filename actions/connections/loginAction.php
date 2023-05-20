@@ -31,7 +31,7 @@ if (isset($_POST['validate'])) {
                 $_SESSION['lastname'] = $usersInfos['lastname'];
 
                 // rediriger l'utilisateur vers la page d'accueil
-                header('location:index.php');
+                header('location:user-dashboard.php');
             } else {
                 $error = 'Votre pseudo ou mot de passe est incorrect';
             }
