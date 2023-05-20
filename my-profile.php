@@ -37,43 +37,38 @@ require('./actions/users/myProfileAction.php');
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
                                     <span class="form-label" for="firstname">Prénom</span>
-                                    <input type="text" id="firstname" class="form-control form-control-sm" placeholder="<?= $infosUser['firstname']; ?>" name="firstname" />
+                                    <input type="text" id="firstname" class="form-control form-control-sm" value="<?= $infosUser['firstname']; ?>" name="firstname" />
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
                                     <span class="form-label" for="lastname">Nom</span>
-                                    <input type="text" id="lastname" class="form-control form-control-sm" placeholder="<?= $infosUser['lastname']; ?>" name="lastname" />
+                                    <input type="text" id="lastname" class="form-control form-control-sm" value="<?= $infosUser['lastname']; ?>" name="lastname" />
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-outline mb-4">
                             <span class="form-label" for="email">E-mail</span>
-                            <input type="email" id="email" class="form-control form-control-sm" placeholder="<?= $infosUser['email']; ?>" name="email" />
+                            <input type="email" id="email" class="form-control form-control-sm" value="<?= $infosUser['email']; ?>" name="email" />
                         </div>
 
                         <div class="form-outline mb-4">
                             <span class="form-label" for="password">Mot de passe</span>
-                            <input type="password" id="password" class="form-control form-control-sm" placeholder="<?= $infosUser['password']; ?>" name="password" />
-                        </div>
-
-                        <div class="form-outline mb-4">
-                            <span class="form-label" for="confirm_password">Confirmez le mot de passe</span>
-                            <input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-sm" placeholder="<?= $infosUser['password']; ?>" />
+                            <input type="password" id="password" class="form-control form-control-sm" value="<?= $infosUser['password']; ?>" name="password" />
                         </div>
 
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
                                     <span class="form-label" for="guest">Nombre de convives par défaut</span>
-                                    <input type="number" id="guest" class="form-control form-control-sm" placeholder="<?= $infosUser['guest']; ?>" name="guest" />
+                                    <input type="number" id="guest" class="form-control form-control-sm" value="<?= $infosUser['guest']; ?>" name="guest" />
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
                                     <span class="form-label" for="allergens">Allergie alimentaire</span>
-                                    <input type="text" id="allergens" class="form-control form-control-sm" placeholder="<?= $infosUser['allergens']; ?>" name="allergens" />
+                                    <input type="text" id="allergens" class="form-control form-control-sm" value="<?= $infosUser['allergens']; ?>" name="allergens" />
                                 </div>
                             </div>
                         </div>
