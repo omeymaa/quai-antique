@@ -28,7 +28,6 @@ require('./actions/users/myProfileAction.php');
                 echo '<p>' . $error . '</p>';
             }
 
-            // if (isset($getHisQuestions)) { 
             if ($infosUser = $getInfosUser->fetch()) { ?>
 
                 <form method="POST" id="signup-form" class="py-4">

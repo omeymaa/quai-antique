@@ -34,6 +34,14 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
                 <?php }
                 } ?>
                 </ul>
+
+                <?php if (!isset($_SESSION['auth'])) { ?>
+
+                    <a href="login.php" class="nav-link purple ms-3">Connexion</a>
+
+                <?php } else { ?>
+                    <a href="user-dashboard.php" class="nav-link purple ms-3">Mon compte</a>
+                <?php } ?>
         </nav>
     </header>
 </div>
