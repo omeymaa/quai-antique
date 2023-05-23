@@ -13,3 +13,6 @@ CREATE TABLE
         allergens VARCHAR(255)
     );
 
+DELETE FROM user;
+
+DELETE FROM user WHERE `user`.`id` = 36 

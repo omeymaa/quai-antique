@@ -1,0 +1,79 @@
+require('./lib/config.php');
+
+// validation du formulaire
+if (isset($_POST['validate'])) {
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $email = htmlspecialchars($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    // Vérifier si les champs obligatoires sont remplis
+    if (
+        !empty($firstname) &&
+        !empty($lastname) &&
+        !empty($email) &&
+        !empty($password)
+    ) {
+        // Récupérer les valeurs des champs optionnels
+        $guest = isset($_POST['guest']) && is_numeric($_POST['guest']) ? intval($_POST['guest']) : null;
+        $allergens = isset($_POST['allergens']) ? htmlspecialchars($_POST['allergens']) : null;
+
+        //les donnees a faire passer dans la requete
+        $new_question_firstname = htmlspecialchars($_POST['firstname']);
+        $new_question_lastname = htmlspecialchars($_POST['lastname']);
+        $new_question_email = htmlspecialchars($_POST['email']);
+        $new_question_password = htmlspecialchars($_POST['password']);
+        $new_question_guest = $guest; // Utiliser la variable $guest ici
+        $new_question_allergens = $allergens;
+
+        // modifier les informations de la question qui possede l'id rentré en parametre dans l'url
+        $editQuestionOnWebsite = $db->prepare('UPDATE user SET firstname = ?, lastname = ?, email = ?, password = ?, guest = ?, allergens = ? WHERE id = ?');
+        $editQuestionOnWebsite->execute(array($new_question_firstname, $new_question_lastname, $new_question_email, $new_question_password, $new_question_guest, $new_question_allergens, $idOfQuestion));
+
+        // rediriger vers la page d'affichage des questions de l'utilisateur
+        header('location: my-profile.php');
+    } else {
+        $error = 'Veuillez remplir tous les champs';
+    }
+}
+
+
+<?php
+require('./lib/config.php');
+
+// validation du formulaire
+if (isset($_POST['validate'])) {
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $email = htmlspecialchars($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    // Vérifier si les champs obligatoires sont remplis
+    if (
+        !empty($firstname) &&
+        !empty($lastname) &&
+        !empty($email) &&
+        !empty($password)
+    ) {
+        // Récupérer les valeurs des champs optionnels
+        $guest = isset($_POST['guest']) && is_numeric($_POST['guest']) ? intval($_POST['guest']) : null;
+        $allergens = isset($_POST['allergens']) ? htmlspecialchars($_POST['allergens']) : null;
+
+        //les donnees a faire passer dans la requete
+        $new_question_firstname = htmlspecialchars($_POST['firstname']);
+        $new_question_lastname = htmlspecialchars($_POST['lastname']);
+        $new_question_email = htmlspecialchars($_POST['email']);
+        $new_question_password = htmlspecialchars($_POST['password']);
+        $new_question_guest = $guest; // Utiliser la variable $guest ici
+        $new_question_allergens = $allergens;
+
+        // modifier les informations de la question qui possede l'id rentré en parametre dans l'url
+        $editQuestionOnWebsite = $db->prepare('UPDATE user SET firstname = ?, lastname = ?, email = ?, password = ?, guest = ?, allergens = ? WHERE id = ?');
+        $editQuestionOnWebsite->execute(array($new_question_firstname, $new_question_lastname, $new_question_email, $new_question_password, $new_question_guest, $new_question_allergens, $idOfQuestion));
+
+        // rediriger vers la page d'affichage des questions de l'utilisateur
+        header('location: my-profile.php');
+    } else {
+        $error = 'Veuillez remplir tous les champs';
+    }
+}
