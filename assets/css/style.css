@@ -133,7 +133,7 @@ header .icons span:hover {
     background-color: #A08986;
 }
 
-.days li.inactive::before {
+.days li.inactive {
     color: #aaa;
 }
 
